@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Demo5</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="robots" content="noindex, follow">
+	<script
+		nonce="95d912cc-40db-4b46-9cb9-87857836952d">(function (w, d) { !function (a, e, t, r) { a.zarazData = a.zarazData || {}; a.zarazData.executed = []; a.zaraz = { deferred: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return function () { var t = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: t }) } }; for (const e of ["track", "set", "ecommerce", "debug"]) a.zaraz[e] = a.zaraz._f(e); a.zaraz.init = () => { var t = e.getElementsByTagName(r)[0], z = e.createElement(r), n = e.getElementsByTagName("title")[0]; n && (a.zarazData.t = e.getElementsByTagName("title")[0].text); a.zarazData.x = Math.random(); a.zarazData.w = a.screen.width; a.zarazData.h = a.screen.height; a.zarazData.j = a.innerHeight; a.zarazData.e = a.innerWidth; a.zarazData.l = a.location.href; a.zarazData.r = e.referrer; a.zarazData.k = a.screen.colorDepth; a.zarazData.n = e.characterSet; a.zarazData.o = (new Date).getTimezoneOffset(); a.zarazData.q = []; for (; a.zaraz.q.length;) { const e = a.zaraz.q.shift(); a.zarazData.q.push(e) } z.defer = !0; for (const e of [localStorage, sessionStorage]) Object.keys(e || {}).filter((a => a.startsWith("_zaraz_"))).forEach((t => { try { a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t)) } catch { a.zarazData["z_" + t.slice(7)] = e.getItem(t) } })); z.referrerPolicy = "origin"; z.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))); t.parentNode.insertBefore(z, t) };["complete", "interactive"].includes(e.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, 0, "script"); })(window, document);</script>
+</head>
+
+<body style="background-color: #999999;">
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Buscar cliente registrado
+					</span>
+
+					<!-- DNI -->
+					<div class="wrap-input100 validate-input">
+						<input class="dni input100" type="text" name="dni" placeholder="Digite dni a buscar...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<!-- BOTON BUSCAR -->
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Buscar
+							</button>
+
+							
+						</div>
+					</div>
+
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<span class="login100-form-title">Datos del cliente</span>										
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<!-- NOMBRE -->
+					<div class="wrap-input100 validate-input">
+						<span class="label-input100">Nombre</span>
+						<input class="nombre input100" type="text" readonly="readonly" name="nombre" placeholder="">
+						<span class="focus-input100"></span>
+					</div>
+
+					<!-- APELLIDO -->
+					<div class="wrap-input100 validate-input">
+						<span class="label-input100">Apellido</span>
+						<input class="apellido input100" type="text" readonly="readonly" name="apellido" placeholder="">
+						<span class="focus-input100"></span>
+					</div>
+
+					<!-- CORREO -->
+					<div class="wrap-input100 validate-input">
+						<span class="label-input100">Correo</span>
+						<input class="correo input100" type="text" readonly="readonly" name="correo" placeholder="">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<!-- PLAN -->
+					<div class="wrap-input100 validate-input">
+						<span class="label-input100">Plan</span>
+						<input class="plan input100" type="text" readonly="readonly" name="plan" placeholder="">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<a href="registro.html" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+						Registrate
+						<i class="fa fa-long-arrow-right m-l-5"></i>
+					</a>
+
+					<a href="editar.html" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+						Editar
+						<i class="fa fa-long-arrow-right m-l-5"></i>
+					</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
